@@ -13,17 +13,10 @@ Follow these steps to get the add-on installed on your system:
 Add-on configuration:
 
 ```yaml
-accountemail: mail@example.com
 domain: home.example.com
-dns: dns_cf
-dnsEnvVariables:
-  - name: CF_Token
-    value: xxxx
-  - name: CF_Account_ID
-    value: xxxx
-  - name: CF_Zone_ID
-    value: xxxx
-keylength: ec-256
+server: ca.example.com
+cabundle: /path/to/ca-bundle.crt
+args: arbitrary additional arguments to acme.sh
 fullchainfile: fullchain.pem
 keyfile: privkey.pem
 ```

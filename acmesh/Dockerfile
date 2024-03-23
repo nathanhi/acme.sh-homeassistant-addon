@@ -3,6 +3,7 @@ FROM $BUILD_FROM
 
 ENV LE_CONFIG_HOME /data/acme.sh
 ENV AUTO_UPGRADE $AUTO_UPGRADE
+EXPOSE 80/tcp
 
 RUN apk --no-cache add -f \
   openssl \

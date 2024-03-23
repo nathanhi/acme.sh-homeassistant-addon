@@ -8,6 +8,7 @@ Tested with the *dns_cf* configuration but It should work, the dnsEnvVariables c
 ```yaml
 accountemail: mail@example.com
 domain: home.example.com
+server: ca.example.com
 dns: dns_cf
 dnsEnvVariables:
   - name: CF_Token
